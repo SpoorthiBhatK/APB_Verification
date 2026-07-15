@@ -1,0 +1,305 @@
+# vsim -vopt work.apb_master_top -voptargs="+acc=npr" -assertdebug -l log_apb.log -coverage -c -do "coverage save -onexit -assert -directive -cvg -codeAll ucdb_apb.ucdb; run -all; exit" 
+# Start time: 14:33:40 on Jul 15,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_m_interface(fast)
+# Loading work.packages(fast)
+# Loading work.apb_master_top(fast)
+# Loading work.apb_m_interface(fast)
+# Loading work.apb_master(fast)
+# coverage save -onexit -assert -directive -cvg -codeAll ucdb_apb.ucdb
+#  run -all
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           0------
+# PRDATA: b1966e5c, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 62, wdata_in: 19a261ba, strb_in: 1
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           1------
+# PRDATA: afb26977, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 52, wdata_in: 903d912b, strb_in: 6
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           2------
+# PRDATA: 4c2fa87a, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 1a, wdata_in: 78eb517b, strb_in: 9
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           3------
+# PRDATA: 993391ef, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 98, wdata_in: 16416385, strb_in: 5
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           4------
+# PRDATA: dc9b5399, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: eb, wdata_in: 659b78f4, strb_in: f
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           5------
+# PRDATA: 10b19a7a, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 6c, wdata_in: 1371af59, strb_in: 0
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           6------
+# PRDATA: 81ea1481, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: be, wdata_in: 4f615c87, strb_in: 5
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           7------
+# PRDATA: 1de8baa5, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 8f, wdata_in: 90e68ee6, strb_in: 0
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           8------
+# PRDATA: 3f9a0e83, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 98, wdata_in: 8fc888b5, strb_in: 6
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           9------
+# PRDATA: b3971267, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 6d, wdata_in: 374266da, strb_in: 7
+# 
+# 
+# 
+# [                7000]---------------Driver driving data---------NT:           0------
+# PRDATA: b1966e5c, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 62, wdata_in: 19a261ba, strb_in:  1
+# 
+# 
+# 
+# [                9000]---------------Driver driving data---------NT:           1------
+# PRDATA: afb26977, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 52, wdata_in: 903d912b, strb_in:  6
+# 
+# 
+# 
+# [                9000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           0------
+# PRDATA:00000000 PREADY:0 PSLVERR:0 transfer:1 write_read:1 addr_in:62 wdata_in:19a261ba strb_in:1
+# Input Functional Coverage = 34.52%
+# 
+# 
+# 
+# [               11000]---------------Driver driving data---------NT:           2------
+# PRDATA: 4c2fa87a, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 1a, wdata_in: 78eb517b, strb_in:  9
+# 
+# 
+# 
+# [               11000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           1------
+# PRDATA:00000000 PREADY:0 PSLVERR:0 transfer:1 write_read:1 addr_in:52 wdata_in:903d912b strb_in:6
+# Input Functional Coverage = 45.24%
+# 
+# 
+# 
+# [               13000]---------------Driver driving data---------NT:           3------
+# PRDATA: 993391ef, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 98, wdata_in: 16416385, strb_in:  5
+# 
+# 
+# 
+# [               13000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           2------
+# PRDATA:00000000 PREADY:0 PSLVERR:0 transfer:1 write_read:1 addr_in:1a wdata_in:78eb517b strb_in:9
+# Input Functional Coverage = 45.24%
+# 
+# 
+# 
+# [               15000]---------------Driver driving data---------NT:           4------
+# PRDATA: dc9b5399, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: eb, wdata_in: 659b78f4, strb_in: 15
+# 
+# 
+# 
+# [               15000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           3------
+# PRDATA:993391ef PREADY:0 PSLVERR:0 transfer:1 write_read:1 addr_in:98 wdata_in:16416385 strb_in:5
+# Input Functional Coverage = 47.62%
+# 
+# 
+# 
+# [               17000]---------------Driver driving data---------NT:           5------
+# PRDATA: 10b19a7a, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 6c, wdata_in: 1371af59, strb_in:  0
+# 
+# 
+# 
+# [               17000]------------------------Op-Monitor passing data to scoreboard------------------NT:           0------
+# PADDR: 62, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 19a261ba, PSTRB: 1, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 0
+# 
+# 
+# 
+# [               17000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           4------
+# PRDATA:dc9b5399 PREADY:1 PSLVERR:0 transfer:1 write_read:1 addr_in:eb wdata_in:659b78f4 strb_in:f
+# Input Functional Coverage = 60.71%
+# 
+# [               17000]---------------- SCOREBOARD : Transaction 0 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=62 DATA=19a261ba STRB=1
+# PASS : ERROR MATCH exp=0 act=0
+# 
+# 
+# 
+# [               19000]---------------Driver driving data---------NT:           6------
+# PRDATA: 81ea1481, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: be, wdata_in: 4f615c87, strb_in:  5
+# 
+# 
+# 
+# [               19000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           5------
+# PRDATA:10b19a7a PREADY:0 PSLVERR:1 transfer:1 write_read:1 addr_in:6c wdata_in:1371af59 strb_in:0
+# Input Functional Coverage = 64.29%
+# 
+# 
+# 
+# [               21000]---------------Driver driving data---------NT:           7------
+# PRDATA: 1de8baa5, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 8f, wdata_in: 90e68ee6, strb_in:  0
+# 
+# 
+# 
+# [               21000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           6------
+# PRDATA:10b19a7a PREADY:0 PSLVERR:1 transfer:1 write_read:1 addr_in:be wdata_in:4f615c87 strb_in:5
+# Input Functional Coverage = 64.29%
+# 
+# 
+# 
+# [               23000]---------------Driver driving data---------NT:           8------
+# PRDATA: 3f9a0e83, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 98, wdata_in: 8fc888b5, strb_in:  6
+# 
+# 
+# 
+# [               23000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           7------
+# PRDATA:10b19a7a PREADY:0 PSLVERR:1 transfer:1 write_read:0 addr_in:8f wdata_in:90e68ee6 strb_in:0
+# Input Functional Coverage = 70.83%
+# 
+# 
+# 
+# [               25000]---------------Driver driving data---------NT:           9------
+# PRDATA: b3971267, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 6d, wdata_in: 374266da, strb_in:  7
+# 
+# 
+# 
+# [               25000]------------------------Op-Monitor passing data to scoreboard------------------NT:           1------
+# PADDR: 6c, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 1371af59, PSTRB: 0, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 0
+# 
+# 
+# 
+# [               25000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           8------
+# PRDATA:3f9a0e83 PREADY:1 PSLVERR:0 transfer:1 write_read:1 addr_in:98 wdata_in:8fc888b5 strb_in:6
+# Input Functional Coverage = 70.83%
+# 
+# [               25000]---------------- SCOREBOARD : Transaction 1 ----------------
+# FAIL : WRITE MISMATCH
+# Expected : ADDR=52 DATA=903d912b STRB=6
+# Actual : ADDR=00 DATA=00000000 STRB=0
+# PASS : ERROR MATCH exp=0 act=0
+# 
+# 
+# 
+# [               27000]----------------------Ip-Monitor passing data to Scoreboard------------------------NT:           9------
+# PRDATA:b3971267 PREADY:1 PSLVERR:1 transfer:1 write_read:1 addr_in:6d wdata_in:374266da strb_in:7
+# Input Functional Coverage = 70.83%
+# 
+# 
+# 
+# [               31000]------------------------Op-Monitor passing data to scoreboard------------------NT:           2------
+# PADDR: 6d, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 374266da, PSTRB: 7, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 1
+# 
+# [               31000]---------------- SCOREBOARD : Transaction 2 ----------------
+# FAIL : WRITE MISMATCH
+# Expected : ADDR=1a DATA=78eb517b STRB=9
+# Actual : ADDR=00 DATA=00000000 STRB=0
+# PASS : ERROR MATCH exp=0 act=0
+# 
+# 
+# 
+# [               37000]------------------------Op-Monitor passing data to scoreboard------------------NT:           3------
+# PADDR: 6d, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 374266da, PSTRB: 7, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 1
+# 
+# [               37000]---------------- SCOREBOARD : Transaction 3 ----------------
+# FAIL : WRITE MISMATCH
+# Expected : ADDR=98 DATA=16416385 STRB=5
+# Actual : ADDR=00 DATA=00000000 STRB=0
+# PASS : ERROR MATCH exp=0 act=0
+# 
+# 
+# 
+# [               43000]------------------------Op-Monitor passing data to scoreboard------------------NT:           4------
+# PADDR: 6d, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 374266da, PSTRB: 7, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 1
+# 
+# [               43000]---------------- SCOREBOARD : Transaction 4 ----------------
+# FAIL : WRITE MISMATCH
+# Expected : ADDR=eb DATA=659b78f4 STRB=f
+# Actual : ADDR=00 DATA=00000000 STRB=0
+# PASS : ERROR MATCH exp=0 act=0
+# 
+# 
+# 
+# [               49000]------------------------Op-Monitor passing data to scoreboard------------------NT:           5------
+# PADDR: 6d, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 374266da, PSTRB: 7, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 1
+# 
+# [               49000]---------------- SCOREBOARD : Transaction 5 ----------------
+# FAIL : WRITE MISMATCH
+# Expected : ADDR=6c DATA=1371af59 STRB=0
+# Actual : ADDR=00 DATA=00000000 STRB=0
+# FAIL : ERROR MISMATCH exp=1 act=0
+# 
+# 
+# 
+# [               55000]------------------------Op-Monitor passing data to scoreboard------------------NT:           6------
+# PADDR: 6d, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 374266da, PSTRB: 7, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 1
+# 
+# [               55000]---------------- SCOREBOARD : Transaction 6 ----------------
+# FAIL : WRITE MISMATCH
+# Expected : ADDR=be DATA=4f615c87 STRB=5
+# Actual : ADDR=00 DATA=00000000 STRB=0
+# FAIL : ERROR MISMATCH exp=1 act=0
+# 
+# 
+# 
+# [               61000]------------------------Op-Monitor passing data to scoreboard------------------NT:           7------
+# PADDR: 6d, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 374266da, PSTRB: 7, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 1
+# 
+# [               61000]---------------- SCOREBOARD : Transaction 7 ----------------
+# FAIL : READ MISMATCH
+# Expected : ADDR=8f RDATA=10b19a7a
+# Actual   : ADDR=6d RDATA=00000000 PWRITE=1
+# FAIL : ERROR MISMATCH exp=1 act=0
+# 
+# 
+# 
+# [               67000]------------------------Op-Monitor passing data to scoreboard------------------NT:           8------
+# PADDR: 6d, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 374266da, PSTRB: 7, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 1
+# 
+# [               67000]---------------- SCOREBOARD : Transaction 8 ----------------
+# FAIL : WRITE MISMATCH
+# Expected : ADDR=98 DATA=8fc888b5 STRB=6
+# Actual : ADDR=00 DATA=00000000 STRB=0
+# PASS : ERROR MATCH exp=0 act=0
+# 
+# 
+# 
+# [               73000]------------------------Op-Monitor passing data to scoreboard------------------NT:           9------
+# PADDR: 6d, PSEL: 1, PENABLE: 1, PWRITE: 1, PWDATA: 374266da, PSTRB: 7, rdata_out: 00000000, transfer_done: 0, error: 0, PREADY: 1, PSLVERR: 1
+# 
+# [               73000]---------------- SCOREBOARD : Transaction 9 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=6d DATA=374266da STRB=7
+# FAIL : ERROR MISMATCH exp=1 act=0
+# ======================================================
+#                SCOREBOARD SUMMARY
+# ======================================================
+# PASS COUNT = 2
+# FAIL COUNT = 8
+# TOTAL      = 10
+# ======================================================
+# ** Note: $finish    : apb_master_top.sv(51)
+#    Time: 730 ns  Iteration: 4  Instance: /apb_master_top
+# Saving coverage database on exit...
+# End time: 14:33:41 on Jul 15,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

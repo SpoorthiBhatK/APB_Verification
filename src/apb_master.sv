@@ -1,3 +1,8 @@
+//==============================================================================
+// APB Master RTL Design
+// Description: General APB master module with configurable data and address width
+// Features: Read/Write operations, PREADY support, Error handling
+//==============================================================================
  
 module apb_master #(
     parameter ADDR_WIDTH = 8,      // Address bus width

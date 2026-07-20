@@ -1,3 +1,5 @@
+`include "defines.svh"
+
 class apb_m_ip_monitor;
 
 apb_m_transaction m_th;
@@ -80,34 +82,50 @@ endfunction
 
 
 task start();
-    repeat(4)@(vif.inp_monitor_cb);   
-	for (int i=0; i<`NT; i++) begin
-	repeat(1)@(vif.inp_monitor_cb);
-        //@(vif.inp_monitor_cb iff vif.inp_monitor_cb.transfer);
-	do begin
-		m_th = new();
 
-		m_th.transfer   = vif.inp_monitor_cb.transfer;
-		m_th.write_read = vif.inp_monitor_cb.write_read;        
-		m_th.addr_in    = vif.inp_monitor_cb.addr_in;
-		m_th.wdata_in   = vif.inp_monitor_cb.wdata_in;
-		m_th.strb_in    = vif.inp_monitor_cb.strb_in;
+    repeat(3) @(vif.inp_monitor_cb);
 
-	//	@(vif.inp_monitor_cb iff vif.inp_monitor_cb.transfer && vif.inp_monitor_cb.PREADY);
-		m_th.PREADY     = vif.inp_monitor_cb.PREADY;
-		m_th.PSLVERR    = vif.inp_monitor_cb.PSLVERR;
-		m_th.PRDATA     = vif.inp_monitor_cb.PRDATA;
+    for(int i=0; i<`NT; i++)
+    begin
+	
+        do
+            @(vif.inp_monitor_cb);
+        while(!(vif.inp_monitor_cb.transfer));
 
-		mon_cg.sample();
-		ms_mbx.put(m_th);
+        m_th = new();
 
-		$display("\n\n\n[%t]----------------------Ip-Monitor passing data to Scoreboard------------------------NT: %d------", $time, i);
-		$display("PRDATA:%h PREADY:%0d PSLVERR:%0d transfer:%0d write_read:%0d addr_in:%h wdata_in:%h strb_in:%h", m_th.PRDATA, m_th.PREADY, m_th.PSLVERR, m_th.transfer, m_th.write_read, m_th.addr_in, m_th.wdata_in, m_th.strb_in);
+        m_th.transfer   = vif.inp_monitor_cb.transfer;
+        m_th.write_read = vif.inp_monitor_cb.write_read;
+        m_th.addr_in    = vif.inp_monitor_cb.addr_in;
+        m_th.strb_in    = vif.inp_monitor_cb.strb_in;
 
-		$display("Input Functional Coverage = %0.2f%%", mon_cg.get_coverage());
-	end
-	while(!vif.inp_monitor_cb.transfer);
+        do
+            @(vif.inp_monitor_cb);
+        while(!(vif.inp_monitor_cb.PREADY));
+
+        m_th.PSLVERR  = vif.inp_monitor_cb.PSLVERR;
+        m_th.PREADY   = vif.inp_monitor_cb.PREADY;
+        m_th.wdata_in = vif.inp_monitor_cb.wdata_in;
+        m_th.PRDATA   = vif.inp_monitor_cb.PRDATA;
+
+        $display(
+            "INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=%0d,write_read=%0d,addr_in=%0h,wdata_in=%0h,strb_in=%0b,PSLVERR=%0d,PREADY=%0d,PRDATA=%0h",
+            m_th.transfer,
+            m_th.write_read,
+            m_th.addr_in,
+            m_th.wdata_in,
+            m_th.strb_in,
+            m_th.PSLVERR,
+            m_th.PREADY,
+            m_th.PRDATA
+        );
+
+        ms_mbx.put(m_th);
+
+        mon_cg.sample();
     end
+
+    $display("Input Functional Coverage = %0.2f%%", mon_cg.get_coverage());
 
 endtask
 

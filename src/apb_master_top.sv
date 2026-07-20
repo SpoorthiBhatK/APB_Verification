@@ -2,21 +2,23 @@
 `include "packages.sv"
 
 module apb_master_top();
+
 import packages::*;
 
-logic PCLK;
-logic PRESETn;
+logic PCLK = 0;
+logic PRESETn = 0;
 
 initial begin
-	PCLK = 0;
 	forever #10 PCLK = ~PCLK;
 end
 
 initial begin
 	@(posedge PCLK);
     	PRESETn = 0;
-    	PRESETn = 1;
-    	repeat(1) @(posedge PCLK);
+	//#1; 
+     	repeat(1) @(posedge PCLK); 	
+	PRESETn = 1;
+    	@(posedge PCLK);
     	PRESETn = 0;
     	repeat(1) @(posedge PCLK);
     	PRESETn = 1;
@@ -45,10 +47,16 @@ apb_master #(.ADDR_WIDTH(`AW), .DATA_WIDTH(`DW) )DUV(
 	.transfer_done(intf.transfer_done), 
 	.error(intf.error)        
 );
-apb_master_test t = new(intf.DRV, intf.ip_MON, intf.op_MON);
+// apb_master_test             t = new(intf.DRV, intf.ip_MON, intf.op_MON);
+// apb_master_write_test       t = new(intf.DRV, intf.ip_MON, intf.op_MON);
+// apb_master_read_test        t = new(intf.DRV, intf.ip_MON, intf.op_MON);
+// apb_master_b2b_write_test   t = new(intf.DRV, intf.ip_MON, intf.op_MON);
+// apb_master_b2b_read_test    t = new(intf.DRV, intf.ip_MON, intf.op_MON);
+apb_master_regression_test t = new(intf.DRV, intf.ip_MON, intf.op_MON);
+
 initial begin
-t.run();
-$finish();
+    t.run();
+    $finish();
 end
 endmodule
 

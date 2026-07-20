@@ -1,4 +1,5 @@
 `include "defines.svh"
+
 interface apb_m_interface(input bit PCLK, PRESETn);
 	logic [`DW-1:0]PRDATA;
 	logic PREADY;

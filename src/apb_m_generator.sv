@@ -1,5 +1,7 @@
 `include "defines.svh"
+
 class apb_m_generator;
+
 apb_m_transaction g_th;
 mailbox #(apb_m_transaction)gd_mbx;
 

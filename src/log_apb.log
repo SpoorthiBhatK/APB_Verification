@@ -1,0 +1,1297 @@
+# vsim -vopt work.apb_master_top -voptargs="+acc=npr" -assertdebug -l log_apb.log -coverage -c -do "coverage save -onexit -assert -directive -cvg -codeAll ucdb_apb.ucdb; run -all; exit" 
+# Start time: 10:09:39 on Jul 20,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_m_interface(fast)
+# Loading work.packages(fast)
+# Loading work.apb_master_top(fast)
+# Loading work.apb_m_interface(fast)
+# Loading work.apb_master(fast)
+# ** Warning: (vsim-8441) apb_m_driver.sv(24): Clocking block output vif.driver_cb.PRDATA is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(25): Clocking block output vif.driver_cb.PREADY is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(26): Clocking block output vif.driver_cb.PSLVERR is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(32): Clocking block output vif.driver_cb.addr_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(34): Clocking block output vif.driver_cb.strb_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(30): Clocking block output vif.driver_cb.transfer is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(33): Clocking block output vif.driver_cb.wdata_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(31): Clocking block output vif.driver_cb.write_read is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(34): Clocking block output vif.driver_cb.strb_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(33): Clocking block output vif.driver_cb.wdata_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(32): Clocking block output vif.driver_cb.addr_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(31): Clocking block output vif.driver_cb.write_read is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(30): Clocking block output vif.driver_cb.transfer is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(26): Clocking block output vif.driver_cb.PSLVERR is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(25): Clocking block output vif.driver_cb.PREADY is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(24): Clocking block output vif.driver_cb.PRDATA is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(34): Clocking block output vif.driver_cb.strb_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(33): Clocking block output vif.driver_cb.wdata_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(32): Clocking block output vif.driver_cb.addr_in is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(31): Clocking block output vif.driver_cb.write_read is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(30): Clocking block output vif.driver_cb.transfer is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(26): Clocking block output vif.driver_cb.PSLVERR is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(25): Clocking block output vif.driver_cb.PREADY is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# ** Warning: (vsim-8441) apb_m_driver.sv(24): Clocking block output vif.driver_cb.PRDATA is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /packages File: packages.sv
+# coverage save -onexit -assert -directive -cvg -codeAll ucdb_apb.ucdb
+#  run -all
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           0------
+# PRDATA: a97f8dd2, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 92, wdata_in: 9f6f1a8c, strb_in: 7
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           1------
+# PRDATA: 64ec0870, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: f5, wdata_in: d84452e7, strb_in: f
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           2------
+# PRDATA: c992262b, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: ab, wdata_in: 4c97708e, strb_in: 6
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           3------
+# PRDATA: c52b6099, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 72, wdata_in: 58d10f99, strb_in: 3
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           4------
+# PRDATA: 05f8f188, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 97, wdata_in: 559fd968, strb_in: 2
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           5------
+# PRDATA: 6cfe8c4b, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: b4, wdata_in: 8efa2477, strb_in: b
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           6------
+# PRDATA: 1106f9f8, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: ff, wdata_in: cd9794ec, strb_in: 6
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           7------
+# PRDATA: 63592615, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 1e, wdata_in: d549a27f, strb_in: 1
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           8------
+# PRDATA: c25b6186, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 3d, wdata_in: 427071a4, strb_in: 3
+# 
+# 
+# 
+# [                   0]---------------Generator Randomized-------------------NT:           9------
+# PRDATA: 65d40461, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: c6, wdata_in: cf512f21, strb_in: 9
+# 
+# 
+# 
+# [                9000]---------------Driver Reset------------NT:           0------
+# PRDATA: 00000000, PREADY: 0, PSLVERR: 0, transfer: 0, write_read: 0, addr_in: 00, wdata_in: 00000000, strb_in:  0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [               19000]---------------Driver driving data---------NT:           0------
+# PRDATA: a97f8dd2, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 92, wdata_in: 9f6f1a8c, strb_in:  7
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=0,write_read=0,addr_in=0,wdata_in=9f6f1a8c,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=a97f8dd2
+# 
+# 
+# 
+# [               21000]------------------------Op-Monitor passing data to scoreboard------------------NT:           0------
+# PADDR: 92, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 9f6f1a8c, PSTRB: 7, rdata_out: 00000000, transfer_done: 1, error: 1
+# 
+# [               21000]---------------- SCOREBOARD : Transaction 0 ----------------
+# FAIL : READ MISMATCH
+# Expected : ADDR=00 RDATA=a97f8dd2
+# Actual   : ADDR=92 RDATA=00000000 PWRITE=1
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [               33000]---------------Driver driving data---------NT:           1------
+# PRDATA: 64ec0870, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: f5, wdata_in: d84452e7, strb_in: 15
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=f5,wdata_in=d84452e7,strb_in=1111,PSLVERR=0,PREADY=1,PRDATA=64ec0870
+# 
+# 
+# 
+# [               35000]------------------------Op-Monitor passing data to scoreboard------------------NT:           1------
+# PADDR: f5, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: d84452e7, PSTRB: f, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [               35000]---------------- SCOREBOARD : Transaction 1 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=f5 DATA=d84452e7 STRB=f
+# Actual   : ADDR=f5 DATA=d84452e7 STRB=f
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [               47000]---------------Driver driving data---------NT:           2------
+# PRDATA: c992262b, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: ab, wdata_in: 4c97708e, strb_in:  6
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=ab,wdata_in=4c97708e,strb_in=110,PSLVERR=0,PREADY=1,PRDATA=c992262b
+# 
+# 
+# 
+# [               49000]------------------------Op-Monitor passing data to scoreboard------------------NT:           2------
+# PADDR: ab, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 4c97708e, PSTRB: 6, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [               49000]---------------- SCOREBOARD : Transaction 2 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=ab DATA=4c97708e STRB=6
+# Actual   : ADDR=ab DATA=4c97708e STRB=6
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [               61000]---------------Driver driving data---------NT:           3------
+# PRDATA: c52b6099, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 72, wdata_in: 58d10f99, strb_in:  3
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=72,wdata_in=58d10f99,strb_in=11,PSLVERR=1,PREADY=1,PRDATA=c52b6099
+# 
+# 
+# 
+# [               63000]------------------------Op-Monitor passing data to scoreboard------------------NT:           3------
+# PADDR: 72, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 58d10f99, PSTRB: 3, rdata_out: 00000000, transfer_done: 1, error: 1
+# 
+# [               63000]---------------- SCOREBOARD : Transaction 3 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=72 DATA=58d10f99 STRB=3
+# Actual   : ADDR=72 DATA=58d10f99 STRB=3
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [               75000]---------------Driver driving data---------NT:           4------
+# PRDATA: 05f8f188, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 97, wdata_in: 559fd968, strb_in:  2
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=97,wdata_in=559fd968,strb_in=10,PSLVERR=0,PREADY=1,PRDATA=5f8f188
+# 
+# 
+# 
+# [               77000]------------------------Op-Monitor passing data to scoreboard------------------NT:           4------
+# PADDR: 97, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 559fd968, PSTRB: 2, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [               77000]---------------- SCOREBOARD : Transaction 4 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=97 DATA=559fd968 STRB=2
+# Actual   : ADDR=97 DATA=559fd968 STRB=2
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [               89000]---------------Driver driving data---------NT:           5------
+# PRDATA: 6cfe8c4b, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: b4, wdata_in: 8efa2477, strb_in: 11
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=b4,wdata_in=8efa2477,strb_in=1011,PSLVERR=0,PREADY=1,PRDATA=6cfe8c4b
+# 
+# 
+# 
+# [               91000]------------------------Op-Monitor passing data to scoreboard------------------NT:           5------
+# PADDR: b4, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 8efa2477, PSTRB: b, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [               91000]---------------- SCOREBOARD : Transaction 5 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=b4 DATA=8efa2477 STRB=b
+# Actual   : ADDR=b4 DATA=8efa2477 STRB=b
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              103000]---------------Driver driving data---------NT:           6------
+# PRDATA: 1106f9f8, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: ff, wdata_in: cd9794ec, strb_in:  6
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=ff,wdata_in=cd9794ec,strb_in=110,PSLVERR=1,PREADY=1,PRDATA=1106f9f8
+# 
+# 
+# 
+# [              105000]------------------------Op-Monitor passing data to scoreboard------------------NT:           6------
+# PADDR: ff, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: cd9794ec, PSTRB: 6, rdata_out: 00000000, transfer_done: 1, error: 1
+# 
+# [              105000]---------------- SCOREBOARD : Transaction 6 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=ff DATA=cd9794ec STRB=6
+# Actual   : ADDR=ff DATA=cd9794ec STRB=6
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              117000]---------------Driver driving data---------NT:           7------
+# PRDATA: 63592615, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 1e, wdata_in: d549a27f, strb_in:  1
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=1e,wdata_in=d549a27f,strb_in=1,PSLVERR=1,PREADY=1,PRDATA=63592615
+# 
+# 
+# 
+# [              119000]------------------------Op-Monitor passing data to scoreboard------------------NT:           7------
+# PADDR: 1e, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: d549a27f, PSTRB: 1, rdata_out: 00000000, transfer_done: 1, error: 1
+# 
+# [              119000]---------------- SCOREBOARD : Transaction 7 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=1e DATA=d549a27f STRB=1
+# Actual   : ADDR=1e DATA=d549a27f STRB=1
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              131000]---------------Driver driving data---------NT:           8------
+# PRDATA: c25b6186, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 3d, wdata_in: 427071a4, strb_in:  3
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=3d,wdata_in=427071a4,strb_in=11,PSLVERR=0,PREADY=1,PRDATA=c25b6186
+# 
+# 
+# 
+# [              133000]------------------------Op-Monitor passing data to scoreboard------------------NT:           8------
+# PADDR: 3d, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 427071a4, PSTRB: 3, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [              133000]---------------- SCOREBOARD : Transaction 8 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=3d DATA=427071a4 STRB=3
+# Actual   : ADDR=3d DATA=427071a4 STRB=3
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              145000]---------------Driver driving data---------NT:           9------
+# PRDATA: 65d40461, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: c6, wdata_in: cf512f21, strb_in:  9
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=c6,wdata_in=cf512f21,strb_in=1001,PSLVERR=1,PREADY=1,PRDATA=65d40461
+# Input Functional Coverage = 78.57%
+# 
+# 
+# 
+# [              147000]------------------------Op-Monitor passing data to scoreboard------------------NT:           9------
+# PADDR: c6, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: cf512f21, PSTRB: 9, rdata_out: 00000000, transfer_done: 1, error: 1
+# 
+# [              147000]---------------- SCOREBOARD : Transaction 9 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=c6 DATA=cf512f21 STRB=9
+# Actual   : ADDR=c6 DATA=cf512f21 STRB=9
+# FAIL : ERROR MISMATCH exp=0 act=1
+# ======================================================
+#                SCOREBOARD SUMMARY
+# ======================================================
+# PASS COUNT = 14
+# FAIL COUNT = 6
+# TOTAL      = 20
+# ======================================================
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           0------
+# PRDATA: b0e7c228, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 2c, wdata_in: 0d9fdaf7, strb_in: b
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           1------
+# PRDATA: 0e7bc11e, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 14, wdata_in: b4ae3444, strb_in: 1
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           2------
+# PRDATA: fb42084c, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: ce, wdata_in: 3a8da80d, strb_in: c
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           3------
+# PRDATA: daca4e09, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 67, wdata_in: 3907354c, strb_in: 1
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           4------
+# PRDATA: 9aee0486, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 91, wdata_in: afb760b4, strb_in: e
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           5------
+# PRDATA: ae647a81, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 9c, wdata_in: dff02e88, strb_in: 4
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           6------
+# PRDATA: d1d4aa2c, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: d4, wdata_in: 2e4266fa, strb_in: 5
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           7------
+# PRDATA: 7f4ff088, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: a8, wdata_in: ded62414, strb_in: 2
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           8------
+# PRDATA: f646859f, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 60, wdata_in: 6fffcf2a, strb_in: 3
+# 
+# 
+# 
+# [              147000]---------------Generator Randomized-------------------NT:           9------
+# PRDATA: ca8aaec1, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: cb, wdata_in: 782f43d0, strb_in: 6
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              165000]---------------Driver driving data---------NT:           0------
+# PRDATA: b0e7c228, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 2c, wdata_in: 0d9fdaf7, strb_in: 11
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=2c,wdata_in=d9fdaf7,strb_in=1011,PSLVERR=0,PREADY=1,PRDATA=b0e7c228
+# 
+# 
+# 
+# [              167000]------------------------Op-Monitor passing data to scoreboard------------------NT:           0------
+# PADDR: 2c, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 0d9fdaf7, PSTRB: b, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [              167000]---------------- SCOREBOARD : Transaction 0 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=2c DATA=0d9fdaf7 STRB=b
+# Actual   : ADDR=2c DATA=0d9fdaf7 STRB=b
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              179000]---------------Driver driving data---------NT:           1------
+# PRDATA: 0e7bc11e, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 14, wdata_in: b4ae3444, strb_in:  1
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=14,wdata_in=b4ae3444,strb_in=1,PSLVERR=0,PREADY=1,PRDATA=e7bc11e
+# 
+# 
+# 
+# [              181000]------------------------Op-Monitor passing data to scoreboard------------------NT:           1------
+# PADDR: 14, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: b4ae3444, PSTRB: 1, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [              181000]---------------- SCOREBOARD : Transaction 1 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=14 DATA=b4ae3444 STRB=1
+# Actual   : ADDR=14 DATA=b4ae3444 STRB=1
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              193000]---------------Driver driving data---------NT:           2------
+# PRDATA: fb42084c, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: ce, wdata_in: 3a8da80d, strb_in: 12
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=ce,wdata_in=3a8da80d,strb_in=1100,PSLVERR=0,PREADY=1,PRDATA=fb42084c
+# 
+# 
+# 
+# [              195000]------------------------Op-Monitor passing data to scoreboard------------------NT:           2------
+# PADDR: ce, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 3a8da80d, PSTRB: c, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [              195000]---------------- SCOREBOARD : Transaction 2 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=ce DATA=3a8da80d STRB=c
+# Actual   : ADDR=ce DATA=3a8da80d STRB=c
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              207000]---------------Driver driving data---------NT:           3------
+# PRDATA: daca4e09, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 67, wdata_in: 3907354c, strb_in:  1
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=67,wdata_in=3907354c,strb_in=1,PSLVERR=0,PREADY=1,PRDATA=daca4e09
+# 
+# 
+# 
+# [              209000]------------------------Op-Monitor passing data to scoreboard------------------NT:           3------
+# PADDR: 67, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 3907354c, PSTRB: 1, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [              209000]---------------- SCOREBOARD : Transaction 3 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=67 DATA=3907354c STRB=1
+# Actual   : ADDR=67 DATA=3907354c STRB=1
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              221000]---------------Driver driving data---------NT:           4------
+# PRDATA: 9aee0486, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 91, wdata_in: afb760b4, strb_in: 14
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=91,wdata_in=afb760b4,strb_in=1110,PSLVERR=0,PREADY=1,PRDATA=9aee0486
+# 
+# 
+# 
+# [              223000]------------------------Op-Monitor passing data to scoreboard------------------NT:           4------
+# PADDR: 91, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: afb760b4, PSTRB: e, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [              223000]---------------- SCOREBOARD : Transaction 4 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=91 DATA=afb760b4 STRB=e
+# Actual   : ADDR=91 DATA=afb760b4 STRB=e
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              235000]---------------Driver driving data---------NT:           5------
+# PRDATA: ae647a81, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 9c, wdata_in: dff02e88, strb_in:  4
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=9c,wdata_in=dff02e88,strb_in=100,PSLVERR=1,PREADY=1,PRDATA=ae647a81
+# 
+# 
+# 
+# [              237000]------------------------Op-Monitor passing data to scoreboard------------------NT:           5------
+# PADDR: 9c, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: dff02e88, PSTRB: 4, rdata_out: 00000000, transfer_done: 1, error: 1
+# 
+# [              237000]---------------- SCOREBOARD : Transaction 5 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=9c DATA=dff02e88 STRB=4
+# Actual   : ADDR=9c DATA=dff02e88 STRB=4
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              249000]---------------Driver driving data---------NT:           6------
+# PRDATA: d1d4aa2c, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: d4, wdata_in: 2e4266fa, strb_in:  5
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=d4,wdata_in=2e4266fa,strb_in=101,PSLVERR=1,PREADY=1,PRDATA=d1d4aa2c
+# 
+# 
+# 
+# [              251000]------------------------Op-Monitor passing data to scoreboard------------------NT:           6------
+# PADDR: d4, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 2e4266fa, PSTRB: 5, rdata_out: 00000000, transfer_done: 1, error: 1
+# 
+# [              251000]---------------- SCOREBOARD : Transaction 6 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=d4 DATA=2e4266fa STRB=5
+# Actual   : ADDR=d4 DATA=2e4266fa STRB=5
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              263000]---------------Driver driving data---------NT:           7------
+# PRDATA: 7f4ff088, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: a8, wdata_in: ded62414, strb_in:  2
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=a8,wdata_in=ded62414,strb_in=10,PSLVERR=0,PREADY=1,PRDATA=7f4ff088
+# 
+# 
+# 
+# [              265000]------------------------Op-Monitor passing data to scoreboard------------------NT:           7------
+# PADDR: a8, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: ded62414, PSTRB: 2, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [              265000]---------------- SCOREBOARD : Transaction 7 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=a8 DATA=ded62414 STRB=2
+# Actual   : ADDR=a8 DATA=ded62414 STRB=2
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              277000]---------------Driver driving data---------NT:           8------
+# PRDATA: f646859f, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 60, wdata_in: 6fffcf2a, strb_in:  3
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=60,wdata_in=6fffcf2a,strb_in=11,PSLVERR=1,PREADY=1,PRDATA=f646859f
+# 
+# 
+# 
+# [              279000]------------------------Op-Monitor passing data to scoreboard------------------NT:           8------
+# PADDR: 60, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 6fffcf2a, PSTRB: 3, rdata_out: 00000000, transfer_done: 1, error: 1
+# 
+# [              279000]---------------- SCOREBOARD : Transaction 8 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=60 DATA=6fffcf2a STRB=3
+# Actual   : ADDR=60 DATA=6fffcf2a STRB=3
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              291000]---------------Driver driving data---------NT:           9------
+# PRDATA: ca8aaec1, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: cb, wdata_in: 782f43d0, strb_in:  6
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=cb,wdata_in=782f43d0,strb_in=110,PSLVERR=0,PREADY=1,PRDATA=ca8aaec1
+# Input Functional Coverage = 78.57%
+# 
+# 
+# 
+# [              293000]------------------------Op-Monitor passing data to scoreboard------------------NT:           9------
+# PADDR: cb, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 782f43d0, PSTRB: 6, rdata_out: 00000000, transfer_done: 1, error: 0
+# 
+# [              293000]---------------- SCOREBOARD : Transaction 9 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=cb DATA=782f43d0 STRB=6
+# Actual   : ADDR=cb DATA=782f43d0 STRB=6
+# PASS : ERROR MATCH exp=0 act=0
+# ======================================================
+#                SCOREBOARD SUMMARY
+# ======================================================
+# PASS COUNT = 31
+# FAIL COUNT = 9
+# TOTAL      = 40
+# ======================================================
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           0------
+# PRDATA: 7f55a447, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 78, wdata_in: 883834df, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           1------
+# PRDATA: d12219c8, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 45, wdata_in: 7c09a84d, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           2------
+# PRDATA: cf617af1, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 74, wdata_in: 882c67ec, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           3------
+# PRDATA: f17e6038, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 93, wdata_in: e803214c, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           4------
+# PRDATA: 00311b24, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: f5, wdata_in: 66bf2cad, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           5------
+# PRDATA: 6d4a47c1, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 2f, wdata_in: c30f264c, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           6------
+# PRDATA: d5cecc5c, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: de, wdata_in: 9fa492b7, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           7------
+# PRDATA: a7490a52, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: bd, wdata_in: d87feccd, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           8------
+# PRDATA: 26f602d9, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 63, wdata_in: 4ab29022, strb_in: 0
+# 
+# 
+# 
+# [              293000]---------------Generator Randomized-------------------NT:           9------
+# PRDATA: 376c5de0, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: ff, wdata_in: 1905f948, strb_in: 0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              311000]---------------Driver driving data---------NT:           0------
+# PRDATA: 7f55a447, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 78, wdata_in: 883834df, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=78,wdata_in=883834df,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=7f55a447
+# 
+# 
+# 
+# [              313000]------------------------Op-Monitor passing data to scoreboard------------------NT:           0------
+# PADDR: 78, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 7f55a447, transfer_done: 1, error: 0
+# 
+# [              313000]---------------- SCOREBOARD : Transaction 0 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=78 RDATA=7f55a447
+# Actual   : ADDR=78 RDATA=7f55a447
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              325000]---------------Driver driving data---------NT:           1------
+# PRDATA: d12219c8, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 45, wdata_in: 7c09a84d, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=45,wdata_in=7c09a84d,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=d12219c8
+# 
+# 
+# 
+# [              327000]------------------------Op-Monitor passing data to scoreboard------------------NT:           1------
+# PADDR: 45, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: d12219c8, transfer_done: 1, error: 1
+# 
+# [              327000]---------------- SCOREBOARD : Transaction 1 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=45 RDATA=d12219c8
+# Actual   : ADDR=45 RDATA=d12219c8
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              339000]---------------Driver driving data---------NT:           2------
+# PRDATA: cf617af1, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 74, wdata_in: 882c67ec, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=74,wdata_in=882c67ec,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=cf617af1
+# 
+# 
+# 
+# [              341000]------------------------Op-Monitor passing data to scoreboard------------------NT:           2------
+# PADDR: 74, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: cf617af1, transfer_done: 1, error: 0
+# 
+# [              341000]---------------- SCOREBOARD : Transaction 2 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=74 RDATA=cf617af1
+# Actual   : ADDR=74 RDATA=cf617af1
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              353000]---------------Driver driving data---------NT:           3------
+# PRDATA: f17e6038, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 93, wdata_in: e803214c, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=93,wdata_in=e803214c,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=f17e6038
+# 
+# 
+# 
+# [              355000]------------------------Op-Monitor passing data to scoreboard------------------NT:           3------
+# PADDR: 93, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: f17e6038, transfer_done: 1, error: 1
+# 
+# [              355000]---------------- SCOREBOARD : Transaction 3 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=93 RDATA=f17e6038
+# Actual   : ADDR=93 RDATA=f17e6038
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              367000]---------------Driver driving data---------NT:           4------
+# PRDATA: 00311b24, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: f5, wdata_in: 66bf2cad, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=f5,wdata_in=66bf2cad,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=311b24
+# 
+# 
+# 
+# [              369000]------------------------Op-Monitor passing data to scoreboard------------------NT:           4------
+# PADDR: f5, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 00311b24, transfer_done: 1, error: 0
+# 
+# [              369000]---------------- SCOREBOARD : Transaction 4 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=f5 RDATA=00311b24
+# Actual   : ADDR=f5 RDATA=00311b24
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              381000]---------------Driver driving data---------NT:           5------
+# PRDATA: 6d4a47c1, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 2f, wdata_in: c30f264c, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=2f,wdata_in=c30f264c,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=6d4a47c1
+# 
+# 
+# 
+# [              383000]------------------------Op-Monitor passing data to scoreboard------------------NT:           5------
+# PADDR: 2f, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 6d4a47c1, transfer_done: 1, error: 1
+# 
+# [              383000]---------------- SCOREBOARD : Transaction 5 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=2f RDATA=6d4a47c1
+# Actual   : ADDR=2f RDATA=6d4a47c1
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              395000]---------------Driver driving data---------NT:           6------
+# PRDATA: d5cecc5c, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: de, wdata_in: 9fa492b7, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=de,wdata_in=9fa492b7,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=d5cecc5c
+# 
+# 
+# 
+# [              397000]------------------------Op-Monitor passing data to scoreboard------------------NT:           6------
+# PADDR: de, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: d5cecc5c, transfer_done: 1, error: 1
+# 
+# [              397000]---------------- SCOREBOARD : Transaction 6 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=de RDATA=d5cecc5c
+# Actual   : ADDR=de RDATA=d5cecc5c
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              409000]---------------Driver driving data---------NT:           7------
+# PRDATA: a7490a52, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: bd, wdata_in: d87feccd, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=bd,wdata_in=d87feccd,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=a7490a52
+# 
+# 
+# 
+# [              411000]------------------------Op-Monitor passing data to scoreboard------------------NT:           7------
+# PADDR: bd, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: a7490a52, transfer_done: 1, error: 0
+# 
+# [              411000]---------------- SCOREBOARD : Transaction 7 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=bd RDATA=a7490a52
+# Actual   : ADDR=bd RDATA=a7490a52
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              423000]---------------Driver driving data---------NT:           8------
+# PRDATA: 26f602d9, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 63, wdata_in: 4ab29022, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=63,wdata_in=4ab29022,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=26f602d9
+# 
+# 
+# 
+# [              425000]------------------------Op-Monitor passing data to scoreboard------------------NT:           8------
+# PADDR: 63, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 26f602d9, transfer_done: 1, error: 1
+# 
+# [              425000]---------------- SCOREBOARD : Transaction 8 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=63 RDATA=26f602d9
+# Actual   : ADDR=63 RDATA=26f602d9
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              437000]---------------Driver driving data---------NT:           9------
+# PRDATA: 376c5de0, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: ff, wdata_in: 1905f948, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=ff,wdata_in=1905f948,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=376c5de0
+# Input Functional Coverage = 82.74%
+# 
+# 
+# 
+# [              439000]------------------------Op-Monitor passing data to scoreboard------------------NT:           9------
+# PADDR: ff, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 376c5de0, transfer_done: 1, error: 1
+# 
+# [              439000]---------------- SCOREBOARD : Transaction 9 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=ff RDATA=376c5de0
+# Actual   : ADDR=ff RDATA=376c5de0
+# FAIL : ERROR MISMATCH exp=0 act=1
+# ======================================================
+#                SCOREBOARD SUMMARY
+# ======================================================
+# PASS COUNT = 45
+# FAIL COUNT = 15
+# TOTAL      = 60
+# ======================================================
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           0------
+# PRDATA: 6ae7c350, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: f5, wdata_in: 63d864c9, strb_in: 2
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           1------
+# PRDATA: b7a431d9, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 21, wdata_in: df8ce473, strb_in: 9
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           2------
+# PRDATA: ddbfa8b3, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: a8, wdata_in: a3998796, strb_in: e
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           3------
+# PRDATA: 81ffb842, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: dd, wdata_in: ae1010bc, strb_in: 8
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           4------
+# PRDATA: 3f41b8e8, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 52, wdata_in: 7332966c, strb_in: 6
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           5------
+# PRDATA: a67b0a70, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 0b, wdata_in: 63f144f9, strb_in: 5
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           6------
+# PRDATA: 74ca648c, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: cf, wdata_in: 41c86882, strb_in: b
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           7------
+# PRDATA: 4a9d7152, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: ed, wdata_in: a9da3fa1, strb_in: 2
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           8------
+# PRDATA: 85d32eff, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: c1, wdata_in: 4f94832f, strb_in: 7
+# 
+# 
+# 
+# [              439000]---------------Generator Randomized-------------------NT:           9------
+# PRDATA: 549912b2, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 4b, wdata_in: 3c6c886c, strb_in: 1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              457000]---------------Driver driving data---------NT:           0------
+# PRDATA: 6ae7c350, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: f5, wdata_in: 63d864c9, strb_in:  2
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=f5,wdata_in=63d864c9,strb_in=10,PSLVERR=1,PREADY=1,PRDATA=6ae7c350
+# 
+# 
+# 
+# [              459000]------------------------Op-Monitor passing data to scoreboard------------------NT:           0------
+# PADDR: f5, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 63d864c9, PSTRB: 2, rdata_out: 376c5de0, transfer_done: 1, error: 1
+# 
+# [              459000]---------------- SCOREBOARD : Transaction 0 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=f5 DATA=63d864c9 STRB=2
+# Actual   : ADDR=f5 DATA=63d864c9 STRB=2
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              471000]---------------Driver driving data---------NT:           1------
+# PRDATA: b7a431d9, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 21, wdata_in: df8ce473, strb_in:  9
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=21,wdata_in=df8ce473,strb_in=1001,PSLVERR=1,PREADY=1,PRDATA=b7a431d9
+# 
+# 
+# 
+# [              473000]------------------------Op-Monitor passing data to scoreboard------------------NT:           1------
+# PADDR: 21, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: df8ce473, PSTRB: 9, rdata_out: 376c5de0, transfer_done: 1, error: 1
+# 
+# [              473000]---------------- SCOREBOARD : Transaction 1 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=21 DATA=df8ce473 STRB=9
+# Actual   : ADDR=21 DATA=df8ce473 STRB=9
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              485000]---------------Driver driving data---------NT:           2------
+# PRDATA: ddbfa8b3, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: a8, wdata_in: a3998796, strb_in: 14
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=a8,wdata_in=a3998796,strb_in=1110,PSLVERR=0,PREADY=1,PRDATA=ddbfa8b3
+# 
+# 
+# 
+# [              487000]------------------------Op-Monitor passing data to scoreboard------------------NT:           2------
+# PADDR: a8, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: a3998796, PSTRB: e, rdata_out: 376c5de0, transfer_done: 1, error: 0
+# 
+# [              487000]---------------- SCOREBOARD : Transaction 2 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=a8 DATA=a3998796 STRB=e
+# Actual   : ADDR=a8 DATA=a3998796 STRB=e
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              499000]---------------Driver driving data---------NT:           3------
+# PRDATA: 81ffb842, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: dd, wdata_in: ae1010bc, strb_in:  8
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=dd,wdata_in=ae1010bc,strb_in=1000,PSLVERR=0,PREADY=1,PRDATA=81ffb842
+# 
+# 
+# 
+# [              501000]------------------------Op-Monitor passing data to scoreboard------------------NT:           3------
+# PADDR: dd, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: ae1010bc, PSTRB: 8, rdata_out: 376c5de0, transfer_done: 1, error: 0
+# 
+# [              501000]---------------- SCOREBOARD : Transaction 3 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=dd DATA=ae1010bc STRB=8
+# Actual   : ADDR=dd DATA=ae1010bc STRB=8
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              513000]---------------Driver driving data---------NT:           4------
+# PRDATA: 3f41b8e8, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 52, wdata_in: 7332966c, strb_in:  6
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=52,wdata_in=7332966c,strb_in=110,PSLVERR=0,PREADY=1,PRDATA=3f41b8e8
+# 
+# 
+# 
+# [              515000]------------------------Op-Monitor passing data to scoreboard------------------NT:           4------
+# PADDR: 52, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 7332966c, PSTRB: 6, rdata_out: 376c5de0, transfer_done: 1, error: 0
+# 
+# [              515000]---------------- SCOREBOARD : Transaction 4 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=52 DATA=7332966c STRB=6
+# Actual   : ADDR=52 DATA=7332966c STRB=6
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              527000]---------------Driver driving data---------NT:           5------
+# PRDATA: a67b0a70, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: 0b, wdata_in: 63f144f9, strb_in:  5
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=b,wdata_in=63f144f9,strb_in=101,PSLVERR=1,PREADY=1,PRDATA=a67b0a70
+# 
+# 
+# 
+# [              529000]------------------------Op-Monitor passing data to scoreboard------------------NT:           5------
+# PADDR: 0b, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 63f144f9, PSTRB: 5, rdata_out: 376c5de0, transfer_done: 1, error: 1
+# 
+# [              529000]---------------- SCOREBOARD : Transaction 5 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=0b DATA=63f144f9 STRB=5
+# Actual   : ADDR=0b DATA=63f144f9 STRB=5
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              541000]---------------Driver driving data---------NT:           6------
+# PRDATA: 74ca648c, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: cf, wdata_in: 41c86882, strb_in: 11
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=cf,wdata_in=41c86882,strb_in=1011,PSLVERR=1,PREADY=1,PRDATA=74ca648c
+# 
+# 
+# 
+# [              543000]------------------------Op-Monitor passing data to scoreboard------------------NT:           6------
+# PADDR: cf, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 41c86882, PSTRB: b, rdata_out: 376c5de0, transfer_done: 1, error: 1
+# 
+# [              543000]---------------- SCOREBOARD : Transaction 6 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=cf DATA=41c86882 STRB=b
+# Actual   : ADDR=cf DATA=41c86882 STRB=b
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              555000]---------------Driver driving data---------NT:           7------
+# PRDATA: 4a9d7152, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: ed, wdata_in: a9da3fa1, strb_in:  2
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=ed,wdata_in=a9da3fa1,strb_in=10,PSLVERR=1,PREADY=1,PRDATA=4a9d7152
+# 
+# 
+# 
+# [              557000]------------------------Op-Monitor passing data to scoreboard------------------NT:           7------
+# PADDR: ed, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: a9da3fa1, PSTRB: 2, rdata_out: 376c5de0, transfer_done: 1, error: 1
+# 
+# [              557000]---------------- SCOREBOARD : Transaction 7 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=ed DATA=a9da3fa1 STRB=2
+# Actual   : ADDR=ed DATA=a9da3fa1 STRB=2
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              569000]---------------Driver driving data---------NT:           8------
+# PRDATA: 85d32eff, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 1, addr_in: c1, wdata_in: 4f94832f, strb_in:  7
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=c1,wdata_in=4f94832f,strb_in=111,PSLVERR=1,PREADY=1,PRDATA=85d32eff
+# 
+# 
+# 
+# [              571000]------------------------Op-Monitor passing data to scoreboard------------------NT:           8------
+# PADDR: c1, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 4f94832f, PSTRB: 7, rdata_out: 376c5de0, transfer_done: 1, error: 1
+# 
+# [              571000]---------------- SCOREBOARD : Transaction 8 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=c1 DATA=4f94832f STRB=7
+# Actual   : ADDR=c1 DATA=4f94832f STRB=7
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              583000]---------------Driver driving data---------NT:           9------
+# PRDATA: 549912b2, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 1, addr_in: 4b, wdata_in: 3c6c886c, strb_in:  1
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=1,addr_in=4b,wdata_in=3c6c886c,strb_in=1,PSLVERR=0,PREADY=1,PRDATA=549912b2
+# Input Functional Coverage = 82.74%
+# 
+# 
+# 
+# [              585000]------------------------Op-Monitor passing data to scoreboard------------------NT:           9------
+# PADDR: 4b, PSEL: 0, PENABLE: 0, PWRITE: 1, PWDATA: 3c6c886c, PSTRB: 1, rdata_out: 376c5de0, transfer_done: 1, error: 0
+# 
+# [              585000]---------------- SCOREBOARD : Transaction 9 ----------------
+# PASS : WRITE MATCH
+# Expected : ADDR=4b DATA=3c6c886c STRB=1
+# Actual   : ADDR=4b DATA=3c6c886c STRB=1
+# PASS : ERROR MATCH exp=0 act=0
+# ======================================================
+#                SCOREBOARD SUMMARY
+# ======================================================
+# PASS COUNT = 59
+# FAIL COUNT = 21
+# TOTAL      = 80
+# ======================================================
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           0------
+# PRDATA: be6a1980, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 31, wdata_in: a32d4ae9, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           1------
+# PRDATA: f52a6f16, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: be, wdata_in: ff5f8960, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           2------
+# PRDATA: 9e268bf8, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: a0, wdata_in: 109ae626, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           3------
+# PRDATA: 2acebb7c, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 4b, wdata_in: 85ace7e5, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           4------
+# PRDATA: 95579e7b, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: f5, wdata_in: 17a8dd62, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           5------
+# PRDATA: 9fa9b84c, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 0a, wdata_in: 2f5bb664, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           6------
+# PRDATA: a843b757, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: ab, wdata_in: db7e12bd, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           7------
+# PRDATA: eee82cf9, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 9f, wdata_in: 38bb1e19, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           8------
+# PRDATA: e61248a0, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 3b, wdata_in: 2ee50bb7, strb_in: 0
+# 
+# 
+# 
+# [              585000]---------------Generator Randomized-------------------NT:           9------
+# PRDATA: 252f073e, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 8d, wdata_in: 44e4f1a1, strb_in: 0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              603000]---------------Driver driving data---------NT:           0------
+# PRDATA: be6a1980, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 31, wdata_in: a32d4ae9, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=31,wdata_in=a32d4ae9,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=be6a1980
+# 
+# 
+# 
+# [              605000]------------------------Op-Monitor passing data to scoreboard------------------NT:           0------
+# PADDR: 31, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: be6a1980, transfer_done: 1, error: 0
+# 
+# [              605000]---------------- SCOREBOARD : Transaction 0 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=31 RDATA=be6a1980
+# Actual   : ADDR=31 RDATA=be6a1980
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              617000]---------------Driver driving data---------NT:           1------
+# PRDATA: f52a6f16, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: be, wdata_in: ff5f8960, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=be,wdata_in=ff5f8960,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=f52a6f16
+# 
+# 
+# 
+# [              619000]------------------------Op-Monitor passing data to scoreboard------------------NT:           1------
+# PADDR: be, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: f52a6f16, transfer_done: 1, error: 1
+# 
+# [              619000]---------------- SCOREBOARD : Transaction 1 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=be RDATA=f52a6f16
+# Actual   : ADDR=be RDATA=f52a6f16
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              631000]---------------Driver driving data---------NT:           2------
+# PRDATA: 9e268bf8, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: a0, wdata_in: 109ae626, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=a0,wdata_in=109ae626,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=9e268bf8
+# 
+# 
+# 
+# [              633000]------------------------Op-Monitor passing data to scoreboard------------------NT:           2------
+# PADDR: a0, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 9e268bf8, transfer_done: 1, error: 0
+# 
+# [              633000]---------------- SCOREBOARD : Transaction 2 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=a0 RDATA=9e268bf8
+# Actual   : ADDR=a0 RDATA=9e268bf8
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              645000]---------------Driver driving data---------NT:           3------
+# PRDATA: 2acebb7c, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 4b, wdata_in: 85ace7e5, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=4b,wdata_in=85ace7e5,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=2acebb7c
+# 
+# 
+# 
+# [              647000]------------------------Op-Monitor passing data to scoreboard------------------NT:           3------
+# PADDR: 4b, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 2acebb7c, transfer_done: 1, error: 1
+# 
+# [              647000]---------------- SCOREBOARD : Transaction 3 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=4b RDATA=2acebb7c
+# Actual   : ADDR=4b RDATA=2acebb7c
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              659000]---------------Driver driving data---------NT:           4------
+# PRDATA: 95579e7b, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: f5, wdata_in: 17a8dd62, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=f5,wdata_in=17a8dd62,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=95579e7b
+# 
+# 
+# 
+# [              661000]------------------------Op-Monitor passing data to scoreboard------------------NT:           4------
+# PADDR: f5, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 95579e7b, transfer_done: 1, error: 0
+# 
+# [              661000]---------------- SCOREBOARD : Transaction 4 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=f5 RDATA=95579e7b
+# Actual   : ADDR=f5 RDATA=95579e7b
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              673000]---------------Driver driving data---------NT:           5------
+# PRDATA: 9fa9b84c, PREADY: 1, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 0a, wdata_in: 2f5bb664, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=a,wdata_in=2f5bb664,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=9fa9b84c
+# 
+# 
+# 
+# [              675000]------------------------Op-Monitor passing data to scoreboard------------------NT:           5------
+# PADDR: 0a, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 9fa9b84c, transfer_done: 1, error: 1
+# 
+# [              675000]---------------- SCOREBOARD : Transaction 5 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=0a RDATA=9fa9b84c
+# Actual   : ADDR=0a RDATA=9fa9b84c
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              687000]---------------Driver driving data---------NT:           6------
+# PRDATA: a843b757, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: ab, wdata_in: db7e12bd, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=ab,wdata_in=db7e12bd,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=a843b757
+# 
+# 
+# 
+# [              689000]------------------------Op-Monitor passing data to scoreboard------------------NT:           6------
+# PADDR: ab, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: a843b757, transfer_done: 1, error: 1
+# 
+# [              689000]---------------- SCOREBOARD : Transaction 6 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=ab RDATA=a843b757
+# Actual   : ADDR=ab RDATA=a843b757
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              701000]---------------Driver driving data---------NT:           7------
+# PRDATA: eee82cf9, PREADY: 0, PSLVERR: 1, transfer: 1, write_read: 0, addr_in: 9f, wdata_in: 38bb1e19, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=9f,wdata_in=38bb1e19,strb_in=0,PSLVERR=1,PREADY=1,PRDATA=eee82cf9
+# 
+# 
+# 
+# [              703000]------------------------Op-Monitor passing data to scoreboard------------------NT:           7------
+# PADDR: 9f, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: eee82cf9, transfer_done: 1, error: 1
+# 
+# [              703000]---------------- SCOREBOARD : Transaction 7 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=9f RDATA=eee82cf9
+# Actual   : ADDR=9f RDATA=eee82cf9
+# FAIL : ERROR MISMATCH exp=0 act=1
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              715000]---------------Driver driving data---------NT:           8------
+# PRDATA: e61248a0, PREADY: 0, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 3b, wdata_in: 2ee50bb7, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=3b,wdata_in=2ee50bb7,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=e61248a0
+# 
+# 
+# 
+# [              717000]------------------------Op-Monitor passing data to scoreboard------------------NT:           8------
+# PADDR: 3b, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: e61248a0, transfer_done: 1, error: 0
+# 
+# [              717000]---------------- SCOREBOARD : Transaction 8 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=3b RDATA=e61248a0
+# Actual   : ADDR=3b RDATA=e61248a0
+# PASS : ERROR MATCH exp=0 act=0
+# No reset happening- Get from mailbox
+# 
+# 
+# 
+# [              729000]---------------Driver driving data---------NT:           9------
+# PRDATA: 252f073e, PREADY: 1, PSLVERR: 0, transfer: 1, write_read: 0, addr_in: 8d, wdata_in: 44e4f1a1, strb_in:  0
+# INPUT MONITOR PASSING THE INPUT DATA TO SCOREBOARD transfer=1,write_read=0,addr_in=8d,wdata_in=44e4f1a1,strb_in=0,PSLVERR=0,PREADY=1,PRDATA=252f073e
+# Input Functional Coverage = 82.74%
+# 
+# 
+# 
+# [              731000]------------------------Op-Monitor passing data to scoreboard------------------NT:           9------
+# PADDR: 8d, PSEL: 0, PENABLE: 0, PWRITE: 0, PWDATA: 00000000, PSTRB: 0, rdata_out: 252f073e, transfer_done: 1, error: 0
+# 
+# [              731000]---------------- SCOREBOARD : Transaction 9 ----------------
+# PASS : READ MATCH
+# Expected : ADDR=8d RDATA=252f073e
+# Actual   : ADDR=8d RDATA=252f073e
+# PASS : ERROR MATCH exp=0 act=0
+# ======================================================
+#                SCOREBOARD SUMMARY
+# ======================================================
+# PASS COUNT = 74
+# FAIL COUNT = 26
+# TOTAL      = 100
+# ======================================================
+# ** Note: $finish    : apb_master_top.sv(59)
+#    Time: 7310 ns  Iteration: 4  Instance: /apb_master_top
+# Saving coverage database on exit...
+# End time: 10:09:40 on Jul 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 24
